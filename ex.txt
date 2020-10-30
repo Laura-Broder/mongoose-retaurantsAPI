@@ -1,0 +1,38 @@
+82-87:
+Exercise 1:  	
+Let’s create a mongoose model for restaurants
+(use a different collection or DB, let’s start from scratch\clean collection)
+Restaurants at this stage should include: 
+name
+borough
+cuisine
+Restuarant_id
+Add validation(s) - 
+required: restuarant_id, name, 
+restaurant_id value is bigger than 0
+Create 5 different objects and save them to your collection.
+
+
+
+Exercise 2: 
+Let’s add more objects to the restaurants
+address  {building, stree, zipcode, coord: []}
+Add validation to coord (lat, lon)
+
+88-92:
+Exercise 3 (REST+ MONGOOSE): 
+Create POST endpoint /restaurant that saves item to DB
+Create GET endpoint /restaurant/:id (or any other method) to fetch the relevant item 
+
+93-101:
+Exercise 4 (REST + MONGOOSE + PROMISE CHAINING)
+Create GET endpoint /restuarat/countByCuisine/:cuisine 
+Will fetch all by given string and will return the count of cuisines 
+Let’s do it twice: 
+Use promise 
+Write another endpoint that will use async\await
+
+Exercise 5 (UPDATE & DELETE)
+Create post or patch operation
+Update restaurant by id, and update specific fields (e.g. cuisine, borough, name)
+Create a delete endpoint to delete (restaurant) by id
